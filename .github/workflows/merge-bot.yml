@@ -27,3 +27,4 @@ jobs:
           dependent_checks: "failing_check,passing_check"
           blocking_label: "block-merge"
           merge_type: "fast-forward"
+          delete_branch: true
