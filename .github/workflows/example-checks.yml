@@ -7,9 +7,15 @@ on:
 
 jobs:
   failing_check:
-    run: |
-      exit 1
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          exit 1
 
   passing_check:
-    run: |
-      exit 0
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          exit 0
