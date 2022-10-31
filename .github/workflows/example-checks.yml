@@ -3,7 +3,13 @@ name: Example checks
 on:
   push:
     branches:
-      [main, staging, "deployment/**"]
+      - main
+      - staging
+
+  pull_request:
+    branches:
+      - main
+      - staging
 
 jobs:
   failing_check:
