@@ -9,6 +9,8 @@ on:
       - review_requested
       - synchronize
       - unlabeled
+      - opened
+      - reopened
   pull_request_review:
     types:
       - dismissed
