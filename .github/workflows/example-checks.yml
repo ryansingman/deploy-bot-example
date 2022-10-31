@@ -8,10 +8,10 @@ on:
 jobs:
   failing_check:
     steps:
-      run: |
+      - run: |
         exit 1
 
   passing_check:
     steps:
-      run: |
+      - run: |
         exit 0
