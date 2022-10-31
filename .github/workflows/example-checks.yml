@@ -9,9 +9,9 @@ jobs:
   failing_check:
     steps:
       - run: |
-        exit 1
+          exit 1
 
   passing_check:
     steps:
       - run: |
-        exit 0
+          exit 0
