@@ -5,7 +5,11 @@ on:
     branches:
       - main
       - staging
-      - 'deployment/**'
+
+  pull_request:
+    branches:
+      - main
+      - staging
 
 jobs:
   failing_check:
