@@ -2,7 +2,8 @@ name: Example checks
 
 on:
   push:
-    main
+    branches:
+      [main]
 
 jobs:
   failing_check:
