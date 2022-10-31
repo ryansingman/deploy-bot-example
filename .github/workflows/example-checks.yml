@@ -7,9 +7,11 @@ on:
 
 jobs:
   failing_check:
-    run: |
-      exit 1
+    steps:
+      run: |
+        exit 1
 
   passing_check:
-    run: |
-      exit 0
+    steps:
+      run: |
+        exit 0
