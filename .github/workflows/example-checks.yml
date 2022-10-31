@@ -1,0 +1,14 @@
+name: Example checks
+
+on:
+  push:
+    main
+
+jobs:
+  failing_check:
+    run: |
+      exit 1
+
+  passing_check:
+    run: |
+      exit 0
