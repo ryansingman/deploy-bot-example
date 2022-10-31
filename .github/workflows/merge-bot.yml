@@ -22,11 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-<<<<<<< HEAD
-      - uses: ryansingman/merge-bot@v0.0.0-alpha
-=======
       - uses: ryansingman/merge-bot@v0.0.2-alpha
->>>>>>> main
         with:
           dependent_checks: "failing_check,passing_check"
           blocking_label: "block-merge"
