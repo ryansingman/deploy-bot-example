@@ -22,7 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: cleanlab/merge-bot@6e6008dee9dd802055fd49fff8d84f9c4534d416
+      - uses: cleanlab/merge-bot@a2d3d1bb2b5eb5d3506758dc50a10f94e232b912
         with:
           dependent_checks: "passing_check"
           blocking_label: "block-merge"
