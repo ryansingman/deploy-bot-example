@@ -17,11 +17,12 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   merge-bot:
-    uses: cleanlab/merge-bot@v1.3.0
-    with:
-      dependent_checks: "passing_check"
-      blocking_label: "block-merge"
-      merge_type: "fast-forward"
-      delete_branch: true
-    secrets:
-      GITHUB_TOKEN: ${{github.token}}
+    runs-on: ubuntu
+    steps: 
+      - uses: cleanlab/merge-bot@v1.3.1
+        with:
+          dependent_checks: "passing_check"
+          blocking_label: "block-merge"
+          merge_type: "fast-forward"
+          delete_branch: true
+          github_token: ${{github.token}}
