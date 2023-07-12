@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   merge-bot:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps: 
       - uses: cleanlab/merge-bot@v1.3.1
         with:
